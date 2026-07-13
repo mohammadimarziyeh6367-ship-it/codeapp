@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسابقه ریاضی پایه اول</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎉 مسابقه ریاضی پایه اول 🎉</h1>
+
+        <!-- نام دانش آموز -->
+        <div id="startPage">
+
+            <label class="title">
+                نام دانش‌آموز
+            </label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="نام خود را وارد کنید">
+
+            <button id="startBtn">
+                شروع مسابقه
+            </button>
+
+        </div>
+
+        <!-- صفحه بازی -->
+        <div id="gamePage" style="display:none;">
+
+            <div class="info">
+
+                <div class="box">
+                    👧
+                    <span id="showName"></span>
+                </div>
+
+                <div class="box">
+                    ⭐ امتیاز :
+                    <span id="score">۰</span>
+                </div>
+
+                <div class="box">
+                    📚 سؤال
+                    <span id="questionNumber">۱</span>
+                    از
+                    <span>۱۰</span>
+                </div>
+
+            </div>
+
+            <!-- سؤال -->
+
+            <div class="question">
+
+                عدد
+
+                <span id="targetNumber">
+                    ۵
+                </span>
+
+                را بساز.
+
+            </div>
+
+            <!-- گزینه ها -->
+
+            <div class="options">
+
+                <button class="option" id="op1"></button>
+
+                <button class="option" id="op2"></button>
+
+                <button class="option" id="op3"></button>
+
+                <button class="option" id="op4"></button>
+
+            </div>
+
+            <!-- پیام -->
+
+            <div id="message">
+
+            </div>
+
+            <button id="nextBtn">
+                سؤال بعدی ➜
+            </button>
+
+        </div>
+
+        <!-- پایان مسابقه -->
+
+        <div id="finishPage" style="display:none;">
+
+            <h2>
+                🎊 مسابقه تمام شد 🎊
+            </h2>
+
+            <h3 id="resultName"></h3>
+
+            <h2>
+                امتیاز شما
+            </h2>
+
+            <h1 id="finalScore"></h1>
+
+            <button onclick="location.reload()">
+                بازی دوباره
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- طراح -->
+
+    <footer>
+
+        🌸 طراح :
+        <strong>
+            مهندس مرضیه محمدی
+        </strong>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
